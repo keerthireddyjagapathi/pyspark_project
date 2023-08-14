@@ -1,0 +1,142 @@
+2023-08-13 23:10:01,600 - INFO - Spark_object - Spark object is created
+2023-08-13 23:10:04,314 - INFO - Spark_object - Validation is done
+2023-08-13 23:10:07,788 - INFO - Ingest - Read the file USA_Presc_Medicare_Data_12021.csv into a dataframe USA_Presc_Medicare_Data_12021.csv_df
+2023-08-13 23:10:08,206 - INFO - Ingest - Read the file us_cities_dimension.parquet into a dataframe us_cities_dimension.parquet_df
+2023-08-13 23:10:08,528 - INFO - Data_cleaning - Printing the schema of the dataframe df_city
+2023-08-13 23:10:08,532 - INFO - Data_cleaning - 	StructField('city', StringType(), True)
+2023-08-13 23:10:08,533 - INFO - Data_cleaning - 	StructField('city_ascii', StringType(), True)
+2023-08-13 23:10:08,533 - INFO - Data_cleaning - 	StructField('state_id', StringType(), True)
+2023-08-13 23:10:08,533 - INFO - Data_cleaning - 	StructField('state_name', StringType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('county_fips', IntegerType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('county_name', StringType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('lat', DoubleType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('lng', DoubleType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('population', IntegerType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('density', IntegerType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('timezone', StringType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - 	StructField('zips', StringType(), True)
+2023-08-13 23:10:08,534 - INFO - Data_cleaning - Printing the schema of the dataframe df_presc
+2023-08-13 23:10:08,535 - INFO - Data_cleaning - 	StructField('npi', IntegerType(), True)
+2023-08-13 23:10:08,535 - INFO - Data_cleaning - 	StructField('nppes_provider_last_org_name', StringType(), True)
+2023-08-13 23:10:08,535 - INFO - Data_cleaning - 	StructField('nppes_provider_first_name', StringType(), True)
+2023-08-13 23:10:08,535 - INFO - Data_cleaning - 	StructField('nppes_provider_city', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('nppes_provider_state', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('specialty_description', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('description_flag', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('drug_name', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('generic_name', StringType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('bene_count', IntegerType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('total_claim_count', IntegerType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('total_30_day_fill_count', DoubleType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('total_day_supply', IntegerType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('total_drug_cost', DoubleType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('bene_count_ge65', IntegerType(), True)
+2023-08-13 23:10:08,536 - INFO - Data_cleaning - 	StructField('bene_count_ge65_suppress_flag', StringType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('total_claim_count_ge65', IntegerType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('ge65_suppress_flag', StringType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('total_30_day_fill_count_ge65', DoubleType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('total_day_supply_ge65', IntegerType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('total_drug_cost_ge65', DoubleType(), True)
+2023-08-13 23:10:08,537 - INFO - Data_cleaning - 	StructField('years_of_exp', StringType(), True)
+2023-08-13 23:10:08,610 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:10:09,136 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:10:12,749 - INFO - Data_cleaning - Data Cleaning........
+2023-08-13 23:10:12,774 - INFO - Data_cleaning - Selected particular columns from the data frames
+2023-08-13 23:10:12,858 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:10:13,095 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:10:48,299 - INFO - Data_cleaning - Imputed the null values in the total_claim_count column with the mean of the column.....
+2023-08-13 23:10:48,326 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:10:48,412 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - Printing the schema of the dataframe df_city
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('city', StringType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('state_id', StringType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('state_name', StringType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('country_name', StringType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('population', IntegerType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('zips', StringType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - Printing the schema of the dataframe df_presc
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('presc_id', IntegerType(), True)
+2023-08-13 23:10:51,341 - INFO - Data_cleaning - 	StructField('presc_city', StringType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('presc_state', StringType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('presc_speciality', StringType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('drug_name', StringType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('total_claim_count', IntegerType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('total_day_supply', IntegerType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('total_drug_cost', DoubleType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('years_of_exp', IntegerType(), True)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('country_name', StringType(), False)
+2023-08-13 23:10:51,342 - INFO - Data_cleaning - 	StructField('presc_name', StringType(), False)
+2023-08-13 23:13:01,688 - INFO - Spark_object - Spark object is created
+2023-08-13 23:13:04,257 - INFO - Spark_object - Validation is done
+2023-08-13 23:13:07,835 - INFO - Ingest - Read the file USA_Presc_Medicare_Data_12021.csv into a dataframe USA_Presc_Medicare_Data_12021.csv_df
+2023-08-13 23:13:08,262 - INFO - Ingest - Read the file us_cities_dimension.parquet into a dataframe us_cities_dimension.parquet_df
+2023-08-13 23:13:08,594 - INFO - Data_cleaning - Printing the schema of the dataframe df_city
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('city', StringType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('city_ascii', StringType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('state_id', StringType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('state_name', StringType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('county_fips', IntegerType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('county_name', StringType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('lat', DoubleType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('lng', DoubleType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('population', IntegerType(), True)
+2023-08-13 23:13:08,598 - INFO - Data_cleaning - 	StructField('density', IntegerType(), True)
+2023-08-13 23:13:08,599 - INFO - Data_cleaning - 	StructField('timezone', StringType(), True)
+2023-08-13 23:13:08,599 - INFO - Data_cleaning - 	StructField('zips', StringType(), True)
+2023-08-13 23:13:08,599 - INFO - Data_cleaning - Printing the schema of the dataframe df_presc
+2023-08-13 23:13:08,600 - INFO - Data_cleaning - 	StructField('npi', IntegerType(), True)
+2023-08-13 23:13:08,600 - INFO - Data_cleaning - 	StructField('nppes_provider_last_org_name', StringType(), True)
+2023-08-13 23:13:08,600 - INFO - Data_cleaning - 	StructField('nppes_provider_first_name', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('nppes_provider_city', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('nppes_provider_state', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('specialty_description', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('description_flag', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('drug_name', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('generic_name', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('bene_count', IntegerType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_claim_count', IntegerType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_30_day_fill_count', DoubleType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_day_supply', IntegerType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_drug_cost', DoubleType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('bene_count_ge65', IntegerType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('bene_count_ge65_suppress_flag', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_claim_count_ge65', IntegerType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('ge65_suppress_flag', StringType(), True)
+2023-08-13 23:13:08,601 - INFO - Data_cleaning - 	StructField('total_30_day_fill_count_ge65', DoubleType(), True)
+2023-08-13 23:13:08,602 - INFO - Data_cleaning - 	StructField('total_day_supply_ge65', IntegerType(), True)
+2023-08-13 23:13:08,602 - INFO - Data_cleaning - 	StructField('total_drug_cost_ge65', DoubleType(), True)
+2023-08-13 23:13:08,602 - INFO - Data_cleaning - 	StructField('years_of_exp', StringType(), True)
+2023-08-13 23:13:08,670 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:13:09,180 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:13:12,778 - INFO - Data_cleaning - Data Cleaning........
+2023-08-13 23:13:12,805 - INFO - Data_cleaning - Selected particular columns from the data frames
+2023-08-13 23:13:12,887 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:13:13,111 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:13:48,649 - INFO - Data_cleaning - Imputed the null values in the total_claim_count column with the mean of the column.....
+2023-08-13 23:13:48,676 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_city
+2023-08-13 23:13:48,760 - INFO - Data_cleaning - Checked the number of null values in the dataframe df_presc
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - Printing the schema of the dataframe df_city
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('city', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('state_id', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('state_name', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('country_name', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('population', IntegerType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('zips', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - Printing the schema of the dataframe df_presc
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('presc_id', IntegerType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('presc_city', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('presc_state', StringType(), True)
+2023-08-13 23:13:51,741 - INFO - Data_cleaning - 	StructField('presc_speciality', StringType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('drug_name', StringType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('total_claim_count', IntegerType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('total_day_supply', IntegerType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('total_drug_cost', DoubleType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('years_of_exp', IntegerType(), True)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('country_name', StringType(), False)
+2023-08-13 23:13:51,742 - INFO - Data_cleaning - 	StructField('presc_name', StringType(), False)
+2023-08-13 23:14:05,199 - INFO - Writing - Written the city dataframe to the disk in csv file format
+2023-08-13 23:14:11,265 - INFO - Writing - Written the presc dataframe to the disk in csv file format
+2023-08-13 23:14:17,494 - INFO - Writing - Written the report1 dataframe to the disk in parquet file format
+2023-08-13 23:14:23,760 - INFO - Writing - Written the report2 dataframe to the disk in parquet file format
+2023-08-13 23:14:24,980 - INFO - Azure_connection - Uploaded the file report1 into azure blob storage
+2023-08-13 23:14:26,212 - INFO - Azure_connection - Uploaded the file report2 into azure blob storage
