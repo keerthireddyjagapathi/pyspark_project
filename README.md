@@ -1,5 +1,6 @@
 # pyspark_project
  Following are the folders present in this project:
+ 
  output- This folder contains the following subfolders
                    cities- After cleaning the data, it is stored in this folder
                    prescribers- After cleaning the data, it is stored in this folder
