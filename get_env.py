@@ -16,6 +16,7 @@ presc_path='output\prescribers'
 report1_path='output\data_report1'
 report2_path='output\data_report2'
 
+#This is the connection string to Azure blob storage
 connection_string="DefaultEndpointsProtocol=https;AccountName=adlspysparkblob;AccountKey=HjzGZKDJ512+zOM1HFljzhb6Lgj0KvVN0CCWp0TRk2G0oCwEQe+FpcKebrLXZnPY2ZJpaLLtM3qd+AStKrXdrA==;EndpointSuffix=core.windows.net"
 
 
